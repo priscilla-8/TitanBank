@@ -20,29 +20,33 @@ body::before
 }
 
 
+
 .navbar{
+width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 15px 40px;
-margin: 10px;
-border-radius: 12px;
-
+padding: 15px 5px;
+margin: 0;
 }
 
+
 .navbar h2{
-    color: white;
+    color: var(--primary);
 }
 
 .nav-links{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a{
     text-decoration: none;
-    color: white;
+    color: var(--dark);
     font-weight: 500;
 }
 
@@ -282,9 +286,18 @@ footer{
     {
         font-size: 28px;
     }
-    .navbar{
+   .navbar{
         flex-direction: column;
-        gap: 10px;
+        padding: 15px;
+        
     }
+.nav-links{
+    gap: 10px;
+   
+}
+.nav-links a{
+    font-size: 16px;
+    font-weight: 700;
+}
 }
 
