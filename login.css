@@ -12,7 +12,7 @@ align-items: center;
 padding: 15px 40px;
 margin: 10px;
 border-radius: 12px;
-
+flex-wrap: wrap;
 }
 
 .navbar h2{
@@ -23,6 +23,7 @@ border-radius: 12px;
     display: flex;
     list-style: none;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-links a{
@@ -214,7 +215,15 @@ align-items: center;
         flex-direction: column;
         height: auto;
     }
-
+.navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+.nav-links{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
     .carousel-section{
         height: 35vh;
     }
