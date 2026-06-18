@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="logo">TItan Bank</div>
+<div class="dashboard">
+
+    <!-- HEADER --> 
+    <div class="header">
+        <div>
+            <h2>Welcome Back 👋</h2>
+            <p>Temiloluwa</p>
+        </div>
+
+        <button id="profileBtn">
+            ☰
+        </button>
+
+        <div id="dropdown" class="dropdown hidden">
+            <p>👤 Profile</p>
+            <p>⚙ Settings</p>
+            <p>🚪 Logout</p>
+        </div>
+    </div>
+
+    <!-- BALANCE CARD -->
+    <div class="balance-card">
+        <p>Available Balance</p>
+
+        <h1 id="balance">₦150,000.00</h1>
+
+        <button id="toggleBalance">
+            Hide Balance
+        </button>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="actions">
+        <button id="transferBtn">Transfer</button>
+        <button>Airtime</button>
+        <button>Bills</button>
+        <button>History</button>
+    </div>
+
+    <!-- TRANSACTIONS -->
+    <div class="transactions">
+        <h3>Recent Transactions</h3>
+
+        <div class="transaction">
+            <span>Transfer to John</span>
+            <strong>- ₦5,000</strong>
+        </div>
+
+        <div class="transaction">
+            <span>Salary Credit</span>
+            <strong>+ ₦50,000</strong>
+        </div>
+
+        <div class="transaction">
+            <span>Airtime Purchase</span>
+            <strong>- ₦2,000</strong>
+        </div>
+    </div>
+
+</div>
+
+<!-- TRANSFER MODAL -->
+
+<div id="transferModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <span id="closeModal" class="close-btn">
+            &times;
+        </span>
+
+        <h3>Transfer Money</h3>
+<p id="successMessage" class="success hidden">Transfer completed sucessfully</p>
+        <input
+            type="text"
+            id="accountNumber"
+            placeholder="Account Number">
+
+        <select id="bank">
+            <option value="">Select Bank</option>
+            <option>GTBank</option>
+            <option>Access Bank</option>
+            <option>UBA</option>
+            <option>First Bank</option>
+        </select>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount">
+
+        <button id="sendBtn">
+            Send Money
+        </button>
+
+    </div>
+
+</div>>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

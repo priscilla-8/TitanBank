@@ -1,0 +1,238 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 40px;
+margin: 10px;
+border-radius: 12px;
+
+}
+
+.navbar h2{
+    color: var(--primary);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+body{
+    background: url(image\ 7.jpg)no-repeat center center/cover;
+    min-height: 100vh;
+    color: var(--dark);
+    position: relative;
+}
+body::before
+{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index:-1;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.caption{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    z-index: 20;
+    color: white;
+}
+.caption h2{
+    margin-bottom: 10px;
+}
+
+.form-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+}
+.phone-frame{
+    width: 380px;
+    background: white;
+    padding:30px;
+    border: 10px solid #555;
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);   
+}
+.logo h1{
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.phone-frame h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.input-group{
+    margin-bottom: 15px;
+}
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+.password-box{
+    position: relative;
+}
+.password-box span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    cursor: pointer;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+gap: 8px;
+margin-bottom: 15px;
+}
+
+
+button{
+    background: #3a3a3a;
+    text-decoration: none;
+    color: var(--dark);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+button:hover{
+    background: #2a3636;
+}
+
+.signin-text{
+    text-align: center;
+    margin-top: 15px;
+}
+.signin-text a{
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    color: gray;
+}
+
+.footer-links{
+    margin: 15px 0;
+
+}
+
+.footer-links a{
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+}
+.modal-content{
+    background: white;
+    padding: 30px;
+    border-radius:15px ;
+    text-align: center;
+    width: 320px;
+}
+
+.modal-content button{
+    margin-top: 20px;
+}
+.loading{
+    opacity: 7;
+    pointer-events: none;
+}
+.spinner{
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: none;
+    animation: spin 0.8s linear infinite;
+}
+@media(max-width:768px){
+
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carousel-section{
+        height: 35vh;
+    }
+
+    .form-section{
+        padding: 20px;
+    }
+
+    .phone-frame{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .caption{
+        left: 20px;
+        bottom: 20px;
+    }
+}
+@keyframes spin{
+    100%{transform: rotate(360deg);}
+}

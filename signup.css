@@ -1,0 +1,272 @@
+*{
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 40px;
+margin: 10px;
+border-radius: 12px;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.navbar h2{
+    color: var(--primary);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+body{
+
+min-height:100vh;
+display:flex;
+flex-direction: column;
+align-items:center;
+
+background:
+linear-gradient(135deg,#111,#555);
+padding-top: 5px;
+
+}
+
+
+.phone{
+
+width:420px;
+height:760px;
+
+border-radius:45px;
+
+padding:20px;
+
+position:relative;
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.3),
+inset 0 0 20px #aaa;
+
+overflow:hidden;
+
+border:10px solid #222;
+
+}
+
+
+
+.phone::before{
+
+content:"";
+
+position:absolute;
+
+width:120px;
+height:20px;
+
+background:#111;
+
+top:0;
+left:50%;
+
+transform:translateX(-50%);
+
+border-radius:0 0 20px 20px;
+
+}
+
+
+
+
+
+
+.container{
+
+margin-top:40px;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+}
+
+
+
+p{
+
+text-align:center;
+color:#666;
+
+}
+
+
+
+form{
+
+margin-top:25px;
+
+}
+
+
+
+input,select{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+border-radius:12px;
+
+border:1px solid #ccc;
+
+outline:none;
+
+}
+
+
+
+.password-box{
+
+position:relative;
+
+}
+
+
+
+.password-box span{
+
+position:absolute;
+
+right:15px;
+
+top:23px;
+
+cursor:pointer;
+
+}
+
+
+
+button{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:20px;
+
+background:#222;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+
+
+.terms{
+
+font-size:13px;
+
+display:flex;
+
+gap:8px;
+
+align-items:center;
+
+}
+
+
+
+.terms input{
+
+width:auto;
+
+}
+
+
+
+.login{
+
+margin-top:20px;
+
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#loader{
+
+display:none;
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:white;
+
+align-items:center;
+justify-content:center;
+
+flex-direction:column;
+
+}
+
+
+.circle{
+
+width:50px;
+height:50px;
+
+border:5px solid #ddd;
+
+border-top:5px solid #222;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+
+
+@keyframes spin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
